@@ -1,0 +1,16 @@
+body { margin:0; font-family:'Microsoft YaHei',sans-serif; background:#f8f9fa; color:#333; }
+.container { max-width:860px; margin:0 auto; padding:0 20px; }
+.header { background:linear-gradient(135deg,#667eea,#764ba2); color:white; padding:50px 0; text-align:center; }
+.site-title { font-size:32px; margin:0 0 10px; }
+.site-desc { font-size:16px; opacity:0.9; margin:0; }
+.intro { padding:30px 0 10px; }
+.intro h2 { margin:0 0 10px; font-size:22px; color:#667eea; }
+.intro p { margin:0; color:#666; line-height:1.8; }
+.article-list { padding:10px 0 30px; }
+.article-card { background:white; border-radius:8px; padding:18px 22px; margin-bottom:12px; box-shadow:0 2px 8px rgba(0,0,0,0.06); transition:transform 0.2s; }
+.article-card:hover { transform:translateY(-2px); box-shadow:0 4px 15px rgba(0,0,0,0.1); }
+.article-card h3 { margin:0 0 6px; font-size:16px; }
+.article-card h3 a { color:#333; text-decoration:none; }
+.article-card h3 a:hover { color:#667eea; }
+.article-card .date { font-size:12px; color:#999; }
+.footer { text-align:center; padding:30px 0; color:#999; font-size:13px; border-top:1px solid #eee; margin-top:30px; }

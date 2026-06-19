@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI论文写作技巧 - 用AI高效完成论文</title>
+<meta name="description" content="AI写论文技巧、Prompt提示词、降重方法、学术写作指南">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <h1 class="site-title">AI论文写作指南</h1>
+    <p class="site-desc">用AI高效完成论文 · 写作业技巧 · 学术工具推荐</p>
+  </div>
+</header>
+<main class="container">
+  <div class="intro">
+    <h2>精选文章</h2>
+    <p>这里收集了最实用的AI辅助论文写作技巧，从选题到降重，从Prompt到工具推荐。</p>
+  </div>
+  <div class="article-list" id="articleList"></div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <p>2026 AI论文写作指南 | 本站内容仅供参考</p>
+  </div>
+</footer>
+<script>
+var articles = [
+  {t:"AI写论文完整流程：从选题到定稿",u:"/articles/ai-write-paper-guide.html"},
+  {t:"10个最实用的AI论文Prompt模板",u:"/articles/ai-paper-prompt-templates.html"},
+  {t:"如何用DeepSeek快速写论文综述",u:"/articles/deepseek-paper-review.html"},
+  {t:"AI论文降重技巧：6个有效方法",u:"/articles/ai-paper-plagiarism-removal.html"},
+  {t:"大学生必备的5款AI写论文工具",u:"/articles/ai-paper-writing-tools.html"},
+  {t:"用AI写开题报告：步骤与示例",u:"/articles/ai-thesis-proposal.html"},
+  {t:"AI辅助文献综述写作指南",u:"/articles/ai-literature-review.html"},
+  {t:"毕业论文每个章节如何用AI辅助",u:"/articles/ai-thesis-chapters.html"},
+  {t:"避免AI论文被识破的5个技巧",u:"/articles/avoid-ai-detection-paper.html"},
+  {t:"如何用AI做论文数据分析",u:"/articles/ai-paper-data-analysis.html"},
+  {t:"AI写论文摘要的最佳Prompt",u:"/articles/ai-abstract-prompt.html"},
+  {t:"用AI优化论文语言表达",u:"/articles/ai-paper-language-polish.html"},
+  {t:"AI辅助论文选题的3种方法",u:"/articles/ai-paper-topic-selection.html"},
+  {t:"ChatGPT写论文的利与弊",u:"/articles/chatgpt-paper-pros-cons.html"},
+  {t:"如何让AI写出的论文更有人情味",u:"/articles/ai-paper-human-touch.html"},
+  {t:"AI论文格式自动排版指南",u:"/articles/ai-paper-formatting.html"},
+  {t:"用AI做论文答辩PPT的技巧",u:"/articles/ai-defense-ppt.html"},
+  {t:"AI辅助论文翻译与润色",u:"/articles/ai-paper-translation.html"},
+  {t:"学期论文用AI快速完成的秘诀",u:"/articles/ai-term-paper-fast.html"},
+  {t:"AI辅助研究方法论写作",u:"/articles/ai-research-methodology.html"},
+];
+var h = '';
+articles.forEach(function(a){h+='<article class="article-card"><h3><a href="'+a.u+'">'+a.t+'</a></h3></article>';});
+document.getElementById('articleList').innerHTML = h;
+</script>
+</body>
+</html>
