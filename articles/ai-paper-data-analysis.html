@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>如何用AI做论文数据分析 - AI论文写作指南</title>
+<meta name="description" content="用AI工具辅助论文数据分析，从数据清洗到统计检验，从图表生成到结果解读，让数据分析变得简单。">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+.article-content { max-width:800px; margin:0 auto; padding:30px 20px; line-height:1.9; font-size:16px; color:#333; }
+.article-content h1 { font-size:26px; color:#667eea; margin-bottom:20px; }
+.article-content h2 { font-size:20px; color:#333; margin:30px 0 15px; border-left:4px solid #667eea; padding-left:12px; }
+.article-content p { margin-bottom:16px; }
+.article-content ul { margin-bottom:16px; padding-left:20px; }
+.article-content li { margin-bottom:8px; }
+.prompt-box { background:#f0f4ff; padding:15px; border-radius:8px; font-size:14px; margin:15px 0; border-left:4px solid #667eea; }
+.code-box { background:#1e1e2e; color:#eee; padding:15px; border-radius:8px; font-size:13px; margin:15px 0; overflow-x:auto; }
+.back-link { display:inline-block; margin-bottom:20px; color:#667eea; text-decoration:none; font-size:14px; }
+.back-link:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <h1 class="site-title">AI论文写作指南</h1>
+    <p class="site-desc">用AI高效完成论文</p>
+  </div>
+</header>
+<main class="article-content">
+  <a href="/" class="back-link">← 返回首页</a>
+  <h1>如何用AI做论文数据分析</h1>
+
+  <p>数据分析是很多文科生的噩梦，但有了AI，其实没那么可怕。AI不能替你做实验或收集数据，但能帮你处理数据、生成图表、撰写分析结果。</p>
+
+  <h2>AI能帮你做什么</h2>
+  <ul>
+    <li><strong>生成分析代码：</strong>Python/R代码做统计分析和可视化</li>
+    <li><strong>数据清洗：</strong>帮你处理缺失值、异常值</li>
+    <li><strong>选择统计方法：</strong>根据你的数据类型推荐合适的检验方法</li>
+    <li><strong>解读结果：</strong>把统计结果转化为文字描述</li>
+    <li><strong>生成图表：</strong>用Python的matplotlib/seaborn生成论文级图表</li>
+  </ul>
+
+  <h2>第一步：让AI推荐分析方法</h2>
+  <p>不确定用什么分析方法？把数据情况告诉AI：</p>
+  <div class="prompt-box">"我收集了关于[研究主题]的数据，变量包括：[列出变量和类型]。我的研究假设是[假设]。请推荐适合的数据分析方法，说明为什么这种方法适合我的数据。"</div>
+
+  <h2>第二步：让AI生成分析代码</h2>
+  <p>以Python为例，让AI生成具体的分析代码：</p>
+  <div class="prompt-box">"我的数据是CSV格式，列名是[列名1][列名2][列名3]。请帮我写Python代码：①导入必要的库 ②读取数据 ③进行描述性统计 ④做[具体分析，如t检验/回归分析] ⑤生成一个[柱状图/散点图/箱线图]并保存为PNG。使用pandas和matplotlib库。"</div>
+
+  <p>AI生成的代码示例：</p>
+  <div class="code-box">import pandas as pd<br>import matplotlib.pyplot as plt<br>import seaborn as sns<br><br>data = pd.read_csv('mydata.csv')<br>print(data.describe())<br><br># t检验<br>from scipy import stats<br>t_stat, p_val = stats.ttest_ind(data[data['group']=='A']['score'],<br>                                data[data['group']=='B']['score'])<br>print(f't={t_stat:.3f}, p={p_val:.3f}')<br><br># 画图<br>plt.figure(figsize=(8,5))<br>sns.boxplot(x='group', y='score', data=data)<br>plt.savefig('result.png', dpi=300)</div>
+
+  <h2>第三步：让AI解读统计结果</h2>
+  <div class="prompt-box">"我的数据分析结果显示：t值=2.34，p值=0.021，均值差=1.56。请帮我写一段结果解读，包括：①说明检验类型 ②报告统计量 ③判断是否显著 ④解释实际意义。要求符合学术论文规范。"</div>
+
+  <h2>第四步：生成结果描述文字</h2>
+  <div class="prompt-box">"请根据以下数据和分析结果，写出论文'结果分析'章节的内容：[粘贴图表和关键数据]。按如下结构写：首先描述样本基本情况，然后逐一报告每个假设检验的结果，最后总结主要发现。"</div>
+
+  <h2>常用分析方法速查</h2>
+  <ul>
+    <li><strong>两组均值比较：</strong>独立样本t检验 / 配对样本t检验</li>
+    <li><strong>多组均值比较：</strong>单因素方差分析（ANOVA）</li>
+    <li><strong>变量关系：</strong>皮尔逊相关 / 斯皮尔曼相关</li>
+    <li><strong>预测分析：</strong>线性回归 / 多元回归 / 逻辑回归</li>
+    <li><strong>分类数据：</strong>卡方检验</li>
+  </ul>
+  <p>不确定用哪个？直接问AI，把数据类型告诉它就行。</p>
+
+  <h2>注意事项</h2>
+  <ul>
+    <li><strong>不要直接拿真实数据给AI</strong>——注意数据隐私，涉及个人信息要先脱敏</li>
+    <li><strong>理解AI生成的代码</strong>——至少大概知道每行代码在做什么</li>
+    <li><strong>验证AI的结果</strong>——可以用不同工具交叉验证（比如SPSS和AI生成的结果对比）</li>
+    <li><strong>结果的解释要自己做</strong>——AI能告诉你"是什么"但"为什么"需要你的分析</li>
+  </ul>
+</main>
+<footer class="footer">
+  <div class="container"><p>2026 AI论文写作指南 | 本站内容仅供参考</p></div>
+</footer>
+</body>
+</html>

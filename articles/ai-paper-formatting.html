@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI论文格式自动排版指南 - AI论文写作指南</title>
+<meta name="description" content="用AI辅助论文格式排版，从页边距到参考文献格式，从目录生成到图表编号，一站式搞定论文格式。">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+.article-content { max-width:800px; margin:0 auto; padding:30px 20px; line-height:1.9; font-size:16px; color:#333; }
+.article-content h1 { font-size:26px; color:#667eea; margin-bottom:20px; }
+.article-content h2 { font-size:20px; color:#333; margin:30px 0 15px; border-left:4px solid #667eea; padding-left:12px; }
+.article-content p { margin-bottom:16px; }
+.article-content ul { margin-bottom:16px; padding-left:20px; }
+.article-content li { margin-bottom:8px; }
+.prompt-box { background:#f0f4ff; padding:15px; border-radius:8px; font-size:14px; margin:15px 0; border-left:4px solid #667eea; }
+.back-link { display:inline-block; margin-bottom:20px; color:#667eea; text-decoration:none; font-size:14px; }
+.back-link:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <h1 class="site-title">AI论文写作指南</h1>
+    <p class="site-desc">用AI高效完成论文</p>
+  </div>
+</header>
+<main class="article-content">
+  <a href="/" class="back-link">← 返回首页</a>
+  <h1>AI论文格式自动排版指南</h1>
+
+  <p>内容写好了，但格式乱七八糟？论文排版是很多人忽略的"隐形扣分项"。用好AI，排版这件事其实很简单。</p>
+
+  <h2>常见论文格式要求</h2>
+  <p>不同学校要求不同，但大多数中文论文的基本规范：</p>
+  <ul>
+    <li><strong>纸张：</strong>A4（210mm × 297mm）</li>
+    <li><strong>页边距：</strong>上3cm、下2.5cm、左3cm、右2.5cm（或统一2.5cm）</li>
+    <li><strong>正文字体：</strong>宋体，小四号（12pt），1.5倍行距</li>
+    <li><strong>标题字体：</strong>黑体，一级标题三号、二级标题小三号、三级标题四号</li>
+    <li><strong>页码：</strong>底部居中</li>
+  </ul>
+
+  <h2>用AI生成排版指令</h2>
+  <p>用Word/LaTeX/WPS排版时，AI可以帮你生成具体的格式指令：</p>
+
+  <h3>Word排版Prompt</h3>
+  <div class="prompt-box">"请帮我写一段VBA代码，用于Word文档排版：①设置页边距上下2.5cm左右3cm ②设置正文为宋体12pt、1.5倍行距 ③一级标题设为黑体16pt加粗居中 ④二级标题设为黑体14pt加粗左对齐 ⑤三级标题设为黑体12pt加粗左对齐 ⑥插入页码底部居中。"</div>
+
+  <h3>LaTeX排版Prompt</h3>
+  <div class="prompt-box">"请帮我写一个LaTeX论文模板，要求：①中文支持（ctex）②A4纸 ③页边距上下2.5cm左右3cm ④正文宋体12pt ⑤章节标题用黑体 ⑥参考文献用GB/T 7714格式 ⑦包含摘要、目录、正文、参考文献结构。"</div>
+
+  <h2>参考文献格式自动生成</h2>
+  <p>参考文献格式是最容易出错的：</p>
+  <div class="prompt-box">"请将以下参考文献整理成GB/T 7714格式，按作者姓氏拼音排序：[粘贴文献信息]。注意：①作者超过3人用等/et al ②期刊文章要有卷期页码 ③书籍要有出版社和出版地 ④学位论文要注明学位级别。"</div>
+
+  <p><strong>GB/T 7714 格式示例：</strong></p>
+  <ul>
+    <li><strong>期刊：</strong>作者. 题名[J]. 刊名, 年, 卷(期): 起止页码.</li>
+    <li><strong>图书：</strong>作者. 书名[M]. 出版地: 出版社, 出版年.</li>
+    <li><strong>学位论文：</strong>作者. 题名[D]. 保存地: 保存单位, 年份.</li>
+    <li><strong>网络资源：</strong>作者. 题名[EB/OL]. (发布日期)[引用日期]. URL.</li>
+  </ul>
+
+  <h2>图表编号和标题</h2>
+  <div class="prompt-box">"请检查以下论文中的图表编号是否连续：如果图表编号有跳跃或重复，请重新排序。确保图的标题在图下方居中，表的标题在表上方居中。格式为'图1/表1 + 标题'：[粘贴全文]"</div>
+
+  <h2>目录自动生成</h2>
+  <p>Word里可以用AI帮忙检查目录：</p>
+  <div class="prompt-box">"我要在Word中自动生成目录。请告诉我步骤：①标题要用什么样式 ②怎么插入目录 ③怎么更新目录 ④怎么设置目录格式。请用Step by Step的格式说明。"</div>
+
+  <h2>排版检查清单</h2>
+  <ul>
+    <li>✅ 页边距是否符合学校要求？</li>
+    <li>✅ 字体和字号是否全文统一？</li>
+    <li>✅ 行距是否一致？</li>
+    <li>✅ 标题层级是否清晰？</li>
+    <li>✅ 图和表的编号是否连续？</li>
+    <li>✅ 参考文献格式是否统一？</li>
+    <li>✅ 页码是否正确？</li>
+    <li>✅ 页眉页脚是否按要求设置？</li>
+    <li>✅ 封面信息是否完整？</li>
+    <li>✅ 打印预览是否正常？</li>
+  </ul>
+
+  <p><strong>最后建议：</strong>排版最好从开始写论文时就注意，而不是写完再调整。一开始就设置好样式，后面只需要"刷格式"就行了。</p>
+</main>
+<footer class="footer">
+  <div class="container"><p>2026 AI论文写作指南 | 本站内容仅供参考</p></div>
+</footer>
+</body>
+</html>

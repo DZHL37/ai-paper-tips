@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>如何用DeepSeek快速写论文综述 - AI论文写作指南</title>
+<meta name="description" content="教你用DeepSeek高效完成论文文献综述，从文献搜索到归纳总结，附详细Prompt和操作步骤。">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+.article-content { max-width:800px; margin:0 auto; padding:30px 20px; line-height:1.9; font-size:16px; color:#333; }
+.article-content h1 { font-size:26px; color:#667eea; margin-bottom:20px; }
+.article-content h2 { font-size:20px; color:#333; margin:30px 0 15px; border-left:4px solid #667eea; padding-left:12px; }
+.article-content p { margin-bottom:16px; }
+.article-content ul { margin-bottom:16px; padding-left:20px; }
+.article-content li { margin-bottom:8px; }
+.prompt-box { background:#f0f4ff; padding:15px; border-radius:8px; font-size:14px; margin:15px 0; border-left:4px solid #667eea; }
+.back-link { display:inline-block; margin-bottom:20px; color:#667eea; text-decoration:none; font-size:14px; }
+.back-link:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <h1 class="site-title">AI论文写作指南</h1>
+    <p class="site-desc">用AI高效完成论文</p>
+  </div>
+</header>
+<main class="article-content">
+  <a href="/" class="back-link">← 返回首页</a>
+  <h1>如何用DeepSeek快速写论文综述</h1>
+
+  <p>文献综述是论文中最让人头疼的部分——文献太多看不完，看完了又不知道怎么归纳。DeepSeek的推理能力特别适合处理这类任务，下面分享一套完整流程。</p>
+
+  <h2>为什么选DeepSeek？</h2>
+  <p>对比其他AI工具，DeepSeek在论文写作上有几个独特优势：</p>
+  <ul>
+    <li><strong>超长上下文（1M tokens）：</strong>一次能处理整本《三体》三部曲，放十几篇文献不在话下</li>
+    <li><strong>推理能力强：</strong>擅长梳理学术观点的逻辑关系</li>
+    <li><strong>完全免费：</strong>官网和App都可以直接用，没有次数限制</li>
+    <li><strong>支持文件上传：</strong>可以直接上传PDF文献让AI阅读</li>
+  </ul>
+
+  <h2>第一步：收集文献</h2>
+  <p>用DeepSeek辅助找文献：</p>
+  <div class="prompt-box">"我研究方向是[你的方向]，请推荐这个领域近5年有影响力的论文，给出标题、作者、发表年份和期刊名称。优先推荐你在训练数据中知道的真实文献。"</div>
+  <p>得到推荐后，去知网或Google Scholar下载PDF，然后上传给DeepSeek分析。</p>
+
+  <h2>第二步：单篇文献分析</h2>
+  <p>上传PDF后，用这个Prompt让DeepSeek提取核心信息：</p>
+  <div class="prompt-box">"请从这篇论文中提取以下信息：①研究问题 ②研究方法 ③主要发现 ④创新点 ⑤局限性。用简洁的条目呈现。"</div>
+
+  <h2>第三步：多篇文献综合</h2>
+  <p>分析完所有文献后，让DeepSeek帮你做综合对比：</p>
+  <div class="prompt-box">"以下是我整理的[X]篇文献的核心观点：[粘贴各篇分析结果]。请帮我：①按主题归类 ②找出观点一致和分歧之处 ③梳理研究发展脉络 ④指出研究空白 ⑤给出文献综述的写作框架。"</div>
+
+  <h2>第四步：撰写综述初稿</h2>
+  <div class="prompt-box">"请根据以上分析写一段文献综述，结构如下：①研究背景概述 ②按主题分类阐述（每类一段）③研究不足与展望。语言要学术化，引用标注用[作者，年份]格式，约800-1000字。"</div>
+
+  <h2>第五步：修改润色</h2>
+  <p>DeepSeek生成初稿后，进行以下调整：</p>
+  <ul>
+    <li><strong>核实引用：</strong>确保AI提到的观点和原文一致</li>
+    <li><strong>补充你的分析：</strong>加入你自己的理解和评价</li>
+    <li><strong>调整逻辑：</strong>检查段落之间的过渡是否自然</li>
+    <li><strong>补充最新文献：</strong>确认没有遗漏重要的近期研究</li>
+  </ul>
+
+  <h2>避坑指南</h2>
+  <ul>
+    <li><strong>不要完全相信AI生成的引用：</strong>DeepSeek可能会编造不存在的文献，务必核实</li>
+    <li><strong>不要只依赖一个AI：</strong>可以结合ChatGPT、Claude等工具交叉验证</li>
+    <li><strong>综述要有你自己的观点：</strong>AI只能帮你归纳，但研究的"故事线"需要你来定</li>
+    <li><strong>先看原文再让AI分析：</strong>如果你自己不了解文献内容，无法判断AI分析是否准确</li>
+  </ul>
+
+  <h2>效率翻倍的小技巧</h2>
+  <p>DeepSeek支持语音输入，读文献时有想法可以直接说出来让它记录。另外可以建立专属对话——把每篇论文的分析放在同一个对话里，DeepSeek会记住上下文，越用越懂你的研究方向。</p>
+</main>
+<footer class="footer">
+  <div class="container"><p>2026 AI论文写作指南 | 本站内容仅供参考</p></div>
+</footer>
+</body>
+</html>

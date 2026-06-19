@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI辅助文献综述写作指南 - AI论文写作指南</title>
+<meta name="description" content="完整的AI辅助文献综述写作流程，从文献检索到归纳总结，包含操作步骤和实用Prompt模板。">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+.article-content { max-width:800px; margin:0 auto; padding:30px 20px; line-height:1.9; font-size:16px; color:#333; }
+.article-content h1 { font-size:26px; color:#667eea; margin-bottom:20px; }
+.article-content h2 { font-size:20px; color:#333; margin:30px 0 15px; border-left:4px solid #667eea; padding-left:12px; }
+.article-content p { margin-bottom:16px; }
+.article-content ul { margin-bottom:16px; padding-left:20px; }
+.article-content li { margin-bottom:8px; }
+.prompt-box { background:#f0f4ff; padding:15px; border-radius:8px; font-size:14px; margin:15px 0; border-left:4px solid #667eea; }
+.back-link { display:inline-block; margin-bottom:20px; color:#667eea; text-decoration:none; font-size:14px; }
+.back-link:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <h1 class="site-title">AI论文写作指南</h1>
+    <p class="site-desc">用AI高效完成论文</p>
+  </div>
+</header>
+<main class="article-content">
+  <a href="/" class="back-link">← 返回首页</a>
+  <h1>AI辅助文献综述写作指南</h1>
+
+  <p>文献综述（Literature Review）是论文中最能体现学术功底的部分，也是最耗时间的。用好AI，可以把文献综述的效率提升3-5倍。</p>
+
+  <h2>什么是好的文献综述？</h2>
+  <p>好的文献综述不是"文献的堆砌"，而是：</p>
+  <ul>
+    <li>梳理出该领域的研究脉络</li>
+    <li>找出不同研究的逻辑关联</li>
+    <li>对比不同学者的观点异同</li>
+    <li>指出当前研究的不足和空白</li>
+    <li>引出你的研究问题和价值</li>
+  </ul>
+
+  <h2>AI辅助文献综述六步法</h2>
+
+  <h3>第一步：文献检索</h3>
+  <p>用AI帮助你确定检索关键词：</p>
+  <div class="prompt-box">"我在做关于[主题]的文献综述，请帮我列出20个中英文检索关键词组合，覆盖这个领域的核心概念和相关方向。"</div>
+
+  <h3>第二步：文献筛选</h3>
+  <p>找到一批文献后，让AI帮你判断哪些值得精读：</p>
+  <div class="prompt-box">"以下是我找到的文献标题，请帮我按相关性排序，并标记出必须精读的Top10：[粘贴文献标题列表]"</div>
+
+  <h3>第三步：单篇精读提取</h3>
+  <p>用AI快速提取每篇文献的核心信息：</p>
+  <div class="prompt-box">"请阅读这篇论文（或以下摘要），提取：①研究目的 ②理论框架 ③研究方法 ④样本/数据 ⑤主要发现 ⑥局限性。用条目呈现，每条不超过50字。"</div>
+
+  <h3>第四步：建立文献矩阵</h3>
+  <p>文献矩阵是将多篇文献横向对比的有效工具：</p>
+  <div class="prompt-box">"请将以下文献分析结果整理成表格，列包括：作者年份、研究问题、方法、发现、局限。行按主题归类排列：[粘贴各篇分析]"</div>
+
+  <h3>第五步：撰写综述</h3>
+  <div class="prompt-box">"请根据文献矩阵，按照主题分类的方式写一段文献综述。结构为：先是研究背景概述，然后按以下主题分别阐述：[主题1][主题2][主题3]，最后写研究不足。每个主题下要综合多篇文献的观点，体现不同学者的共识和争议。"</div>
+
+  <h3>第六步：定位研究缺口</h3>
+  <div class="prompt-box">"基于以上文献综述，请分析当前研究的主要不足和空白，并说明我的研究如何填补这些空白。要具体、有针对性，不要泛泛而谈。"</div>
+
+  <h2>文献综述的写作模式</h2>
+  <p>AI生成的综述往往结构单一，你可以告诉它用哪种模式：</p>
+  <ul>
+    <li><strong>主题归纳型：</strong>按主题分类梳理，每个主题下一组相关文献</li>
+    <li><strong>时间脉络型：</strong>按时间顺序梳理研究的发展演变</li>
+    <li><strong>方法论型：</strong>按研究方法分类对比不同研究</li>
+    <li><strong>论争焦点型：</strong>围绕学术争议展开，不同观点交锋</li>
+  </ul>
+
+  <h2>常见问题</h2>
+  <ul>
+    <li><strong>Q：AI编造不存在的文献怎么办？</strong> A：要求AI只基于你提供的文献分析，不要让它自己生成参考文献</li>
+    <li><strong>Q：综述缺乏逻辑主线怎么办？</strong> A：先自己确定"故事线"，再让AI按这个线索组织内容</li>
+    <li><strong>Q：AI写的综述AI味太重怎么办？</strong> A：加入你自己的评价和分析，每个段落最后加一两句你的评论</li>
+  </ul>
+</main>
+<footer class="footer">
+  <div class="container"><p>2026 AI论文写作指南 | 本站内容仅供参考</p></div>
+</footer>
+</body>
+</html>
